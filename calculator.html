@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CALCULATE</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="display-container"></div>
+      <textarea rows="10" cols="10" type="textArea" name="display" id="display" placeholder="Click the buttons or type the values..."></textarea>
+    </div>
+    <div class="main-container">
+      
+      <div class="ac-container container">
+        <button class="btn ac" onclick="remove()">AC</button>
+        <button class="btn" onclick="del()">DEL</button>
+        <button class="btn" onclick="addValue('%')">%</button>
+        <button class="btn" onclick="addValue('/')">/</button>
+
+      </div>
+      <div class="first-container container">
+        <button class="btn" onclick="addValue('7')">7</button>
+        <button class="btn" onclick="addValue('8')">8</button>
+        <button class="btn" onclick="addValue('9')">9</button>
+        <button class="btn" onclick="addValue('*')">X</button>
+      </div>
+      <div class="second-container container">
+        <button class="btn" onclick="addValue('4')">4</button>
+        <button class="btn" onclick="addValue('5')">5</button>
+        <button class="btn" onclick="addValue('6')">6</button>
+        <button class="btn" onclick="addValue('-')">-</button>
+      </div>
+      <div class="third-container container">
+        <button class="btn" onclick="addValue('1')">1</button>
+        <button class="btn" onclick="addValue('2')">2</button>
+        <button class="btn" onclick="addValue('3')">3</button>
+        <button class="btn" onclick="addValue('+')">+</button>
+      </div>
+      <div class="fourth-container container">
+        <button class="btn" onclick="addValue('00')">00</button>
+        <button class="btn" onclick="addValue('0')">0</button>
+        <button class="btn" onclick="addValue('.')">.</button>
+        <button class="btn" onclick="result()">=</button>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
